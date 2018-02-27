@@ -2,7 +2,7 @@
   "name": "friendFinder",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,8 @@
     "express": "^4.16.2",
     "nodemon": "^1.15.1",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
