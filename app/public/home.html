@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Friend Finder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class = "container">
+		<h1><i class = "fa fa-facebook-square"></i>Friend Finder</h1>
+		<h2>Answer a few basic questions.</h2>
+		<h2> Then find the friend with the greatest compatibility!</h2>
+		
+		<div><a href = "/survey"><button class = "btn btn-lg btn-primary"><span class = "glyphicon glyphicon-list-alt"></span>Go to survey</button></a></div>
+	</div>
+	<div class = "navigation">
+	<p><a href = "/api/friends" target = "_blank">API Friends List</a> &nbsp;| &nbsp; <a href = "https://github.com/lkanand/friendFinder" target = "_blank">GitHub Repo</a></p>
+	</div>
+</body>
+
+<style>
+	.container {
+		background-color: #eee;
+		font-family: 'Arial';
+		padding-top: 50px;
+		padding-left: 60px;
+		padding-right: 80px;
+		border-radius: 6px;
+	}
+
+	h1 {
+		border-bottom: 1px solid #d5d5d5;
+		padding-bottom: 20px;
+		font-size: 63px;
+		font-weight: 600;
+	}
+
+	h1 i {
+		margin-right: 15px;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	div{
+		padding-top: 20px;
+		padding-bottom: 25px;
+	}
+
+	.btn{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-weight: 600;
+	}
+
+	.btn span{
+		margin-right: 10px;
+	}
+
+	.navigation{
+		margin-top: 10px;
+		padding-left: 68px;
+	}
+
+	@media(max-width: 614px) {
+		.container {
+			padding-right: 10px;
+		}
+
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			font-size: 20px;
+		}
+
+	}
+</style>
+

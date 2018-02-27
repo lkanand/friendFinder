@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Friend Finder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<h1>Survey Questions</h1>
+	<h2><strong>About You</strong></h2>
+	<h3>Name (Required)</h3>
+	<input type = "text" id = "name" class = "form-control" required>
+	<h3>Link to Photo Image (Required)</h3>
+	<input type = "text" id = "photo_image" class = "form-control" required>
+	<h2 id = "first-question"><strong>Question 1</strong></h2>
+	<h3>You prefer long walks on short beaches to short walks on long beaches</h3>
+	<select class = "chosen-select" id = "question1">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 2</strong></h2>
+	<h3>You prefer Lord of the Rings to Harry Potter</h3>
+	<select class = "chosen-select" id = "question2">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 3</strong></h2>
+	<h3>You prefer back-end development to front-end development</h3>
+	<select class = "chosen-select" id = "question3">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 4</strong></h2>
+	<h3>You prefer reading the New York Times instead of the Wall Street Journal</h3>
+	<select class = "chosen-select" id = "question4">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 5</strong></h2>
+	<h3>You find books to be more interesting than 95% of the conversations you have with people</h3>
+	<select class = "chosen-select" id = "question5">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 6</strong></h2>
+	<h3>You believe the journey is more important than the destination</h3>
+	<select class = "chosen-select" id = "question6">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 7</strong></h2>
+	<h3>You long for a single-payor healthcare system</h3>
+	<select class = "chosen-select" id = "question7">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 8</strong></h2>
+	<h3>You prefer dogs over cats</h3>
+	<select class = "chosen-select" id = "question8">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 9</strong></h2>
+	<h3>You enjoy watching reality TV shows</h3>
+	<select class = "chosen-select" id = "question9">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<h2><strong>Question 10</strong></h2>
+	<h3>You believe the biggest threat to civilization is modern technology</h3>
+	<select class = "chosen-select" id = "question10">
+		<option value = "" disabled selected>Select an Option</option>
+		<option value = "1">1 (Strongly Disagree)</option>
+		<option value = "2">2</option>
+		<option value = "3">3</option>
+		<option value = "4">4</option>
+		<option value = "5">5 (Strongly Agree)</option>
+	</select>
+
+	<div class = "div">
+		<button class = "btn btn-lg btn-primary btn-block" id = "submit"><i class = "fa fa-check-circle"></i>Submit</button>
+		<p id = "warning" class = "display-none">Please fill out all fields before submitting</p>
+	</div>
+
+	<div class = "div">
+		<p><a href = "/api/friends" target = "_blank">API Friends List</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href = "https://github.com/lkanand/friendFinder" target = "_blank">GitHub Repo</a></p>
+	</div>
+
+	<div class = "modal fade" id = "friend-notification" tabindex = "-1" role = "dialog">
+		<div class = "modal-dialog" role = "document">
+			<div class = "modal-content">
+				<div class = "modal-header">
+					<h5 class = "modal-title">Your Match</h5>
+				</div>
+				<div class = "modal-body">
+					<img id = "match-img" onError = "replacePicture()">
+					<p id = "match-name"></p>
+				</div>
+				<div class = "modal-footer">
+					<button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div> 
+
+<script>
+	function replacePicture() {
+		$("#match-img").attr("src", "http://via.placeholder.com/400x300?text=Picture+Not+Found");
+	}
+
+	$("#submit").on("click", function(){
+		event.preventDefault();
+		$("#warning").addClass("display-none");
+
+		if($("#name").val().trim() === "" || $("#photo_image").val().trim() === "") {
+			$("#warning").removeClass("display-none");
+			return;
+		}
+
+		var name = $("#name").val().trim();
+		var photo = $("#photo_image").val().trim();
+
+		var responses = [];
+
+		for(var i = 1; i < 11; i++) {
+			if($("#question" + i).val() === null) {
+				$("#warning").removeClass("display-none");
+				return;
+			}	
+			responses.push($("#question" + i).val());
+		}
+
+		$("#name").val("");
+		$("#photo_image").val("");
+		for(var i = 1; i < 11; i++)
+			$("#question" + i).val("");
+
+		var profile = {
+			"name": name,
+			"photo": photo,
+			"scores": responses
+		};
+
+		$.post("/api/friends", profile, function(myFriend){
+			$("#match-name").text(myFriend.name);
+			$("#match-img").attr("src", myFriend.photo);
+			$("#friend-notification").modal("show");
+		});
+	});
+</script>
+</body>
+
+<style>
+	body {
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	
+	h1 {
+		font-size: 30px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #eee;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#first-question {
+		border-top: 1px solid #eee;
+		padding-top: 20px;
+	}
+
+	.chosen-select{
+		margin-top: 2px;
+		height: 25px;
+	}
+
+	.div{
+		margin-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #eee;
+	}
+
+	i{
+		margin-right: 5px;
+	}
+
+	p{
+		padding-left: 15px;
+	}
+
+	#warning{
+		color: red;
+		padding-left: 0px;
+		font-size: 18px;
+		margin-bottom: 0px;
+		margin-top: 5px;
+	}
+
+	.display-none{
+		display: none;
+	}
+
+	#match-img{
+		width: 30vw;
+		height: auto;
+		display: block;
+		margin: auto;
+		padding-top: 20px
+	}
+
+	#match-name{
+		font-size: 28px;
+		padding-top: 10px;
+		text-align: center;
+	}
+
+	h5{
+		text-align: center;
+		font-size: 40px;
+	}
+</style>
